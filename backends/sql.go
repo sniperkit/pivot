@@ -14,9 +14,9 @@ import (
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
-	"github.com/ghetzel/pivot/filter/generators"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
+	"github.com/sniperkit/pivot/filter/generators"
 )
 
 var objectFieldHintLength = 131071
@@ -746,7 +746,7 @@ func (self *SqlBackend) scanFnValueToRecord(queryGen *generators.Sql, collection
 
 	// each argument in the call to scan will be the address of the corresponding
 	// item in the output array
-	for i, _ := range output {
+	for i := range output {
 		rRowArgs[i] = reflect.ValueOf(output).Index(i).Addr()
 	}
 

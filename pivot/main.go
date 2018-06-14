@@ -8,11 +8,11 @@ import (
 
 	"github.com/ghetzel/cli"
 	"github.com/ghetzel/go-stockutil/log"
-	"github.com/ghetzel/pivot"
-	"github.com/ghetzel/pivot/backends"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/mapper"
-	"github.com/ghetzel/pivot/util"
+	"github.com/sniperkit/pivot"
+	"github.com/sniperkit/pivot/backends"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/mapper"
+	"github.com/sniperkit/pivot/util"
 )
 
 func main() {

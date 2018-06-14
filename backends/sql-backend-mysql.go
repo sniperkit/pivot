@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
-	"github.com/ghetzel/pivot/filter/generators"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
+	"github.com/sniperkit/pivot/filter/generators"
 )
 
 func (self *SqlBackend) initializeMysql() (string, string, error) {

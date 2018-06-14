@@ -3,7 +3,7 @@ package generators
 import (
 	"fmt"
 
-	"github.com/ghetzel/pivot/filter"
+	"github.com/sniperkit/pivot/filter"
 )
 
 func esCriterionOperatorIs(gen *Elasticsearch, criterion filter.Criterion) (map[string]interface{}, error) {

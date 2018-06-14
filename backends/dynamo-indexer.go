@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
 	"github.com/guregu/dynamo"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
 )
 
 func (self *DynamoBackend) IndexConnectionString() *dal.ConnectionString {

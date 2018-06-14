@@ -3,7 +3,7 @@ package filter
 import (
 	"testing"
 
-	"github.com/ghetzel/pivot/dal"
+	"github.com/sniperkit/pivot/dal"
 	"github.com/stretchr/testify/require"
 )
 

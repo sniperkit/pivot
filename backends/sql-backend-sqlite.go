@@ -11,9 +11,9 @@ import (
 	"github.com/ghetzel/go-stockutil/pathutil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter/generators"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter/generators"
 )
 
 func (self *SqlBackend) initializeSqlite() (string, string, error) {

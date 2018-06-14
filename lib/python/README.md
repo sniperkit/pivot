@@ -13,7 +13,7 @@ To use this module, install it using the Python `pip` utility (directly, or via 
 dependency file) like so:
 
 ```
-pip install git+https://github.com/ghetzel/pivot.git#subdirectory=lib/python
+pip install git+https://github.com/sniperkit/pivot.git#subdirectory=lib/python
 ```
 
 ## Examples

@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ghetzel/pivot"
-	"github.com/ghetzel/pivot/dal"
+	"github.com/sniperkit/pivot"
+	"github.com/sniperkit/pivot/dal"
 	"github.com/stretchr/testify/require"
 )
 
@@ -205,7 +205,7 @@ func TestModelList(t *testing.T) {
 	values, err := model.List([]string{`name`})
 	assert.Nil(err)
 	assert.Equal(map[string][]interface{}{
-		`name`: []interface{}{
+		`name`: {
 			`test-one`,
 			`test-two`,
 			`test-three`,
@@ -215,12 +215,12 @@ func TestModelList(t *testing.T) {
 	values, err = model.List([]string{`name`, `size`})
 	assert.Nil(err)
 	assert.Equal(map[string][]interface{}{
-		`name`: []interface{}{
+		`name`: {
 			`test-one`,
 			`test-two`,
 			`test-three`,
 		},
-		`size`: []interface{}{
+		`size`: {
 			int64(12345),
 			int64(98765),
 		},

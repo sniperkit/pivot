@@ -18,11 +18,11 @@ import (
 	"github.com/ghetzel/go-stockutil/pathutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ghetzel/pivot/backends"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
-	"github.com/ghetzel/pivot/util"
 	"github.com/husobee/vestigo"
+	"github.com/sniperkit/pivot/backends"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
+	"github.com/sniperkit/pivot/util"
 	"github.com/urfave/negroni"
 )
 

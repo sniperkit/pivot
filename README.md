@@ -1,4 +1,4 @@
-# Pivot [![GoDoc](https://godoc.org/github.com/ghetzel/pivot?status.svg)](https://godoc.org/github.com/ghetzel/pivot)
+# Pivot [![GoDoc](https://godoc.org/github.com/sniperkit/pivot?status.svg)](https://godoc.org/github.com/sniperkit/pivot)
 
 Pivot is a library used to access, query, and aggregate data across a variety of database systems, written in Golang.
 
@@ -41,9 +41,9 @@ import (
     "fmt"
     "time"
 
-    "github.com/ghetzel/pivot"
-    "github.com/ghetzel/pivot/dal"
-    "github.com/ghetzel/pivot/mapper"
+    "github.com/sniperkit/pivot"
+    "github.com/sniperkit/pivot/dal"
+    "github.com/sniperkit/pivot/mapper"
 )
 
 var Widgets mapper.Mapper

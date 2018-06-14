@@ -14,9 +14,9 @@ import (
 	"github.com/ghetzel/go-stockutil/log"
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
-	"github.com/ghetzel/pivot/filter/generators"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
+	"github.com/sniperkit/pivot/filter/generators"
 )
 
 var ElasticsearchBatchFlushCount = 1

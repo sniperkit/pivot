@@ -18,9 +18,9 @@ import (
 	"github.com/ghetzel/go-stockutil/log"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
 	"github.com/orcaman/concurrent-map"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
 )
 
 var BleveBatchFlushCount = 1

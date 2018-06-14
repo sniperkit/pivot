@@ -8,9 +8,9 @@ import (
 	"reflect"
 
 	"github.com/ghetzel/go-stockutil/sliceutil"
-	"github.com/ghetzel/pivot/backends"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
+	"github.com/sniperkit/pivot/backends"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
 )
 
 type ResultFunc func(ptrToInstance interface{}, err error) // {}
@@ -381,7 +381,7 @@ func (self *Model) populateOutputParameter(f *filter.Filter, recordset *dal.Reco
 	// for each resulting record...
 	for _, record := range recordset.Records {
 		if len(f.Fields) > 0 {
-			for k, _ := range record.Fields {
+			for k := range record.Fields {
 				if !sliceutil.ContainsString(f.Fields, k) {
 					delete(record.Fields, k)
 				}

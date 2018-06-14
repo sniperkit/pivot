@@ -1,0 +1,54 @@
+package: github.com/sniperkit/pivot
+ignore:
+- github.com/mattn/go-sqlite3
+import:
+- package: github.com/alexcesaro/statsd
+- package: github.com/aws/aws-sdk-go
+  subpackages:
+  - aws
+  - aws/credentials
+  - aws/session
+  - service/dynamodb
+- package: github.com/blevesearch/bleve
+  subpackages:
+  - analysis/analyzer/custom
+  - analysis/char/regexp
+  - analysis/token/lowercase
+  - analysis/tokenizer/single
+  - mapping
+  - search/query
+- package: github.com/deckarep/golang-set
+- package: github.com/fatih/structs
+- package: github.com/ghetzel/cli
+- package: github.com/ghetzel/diecast
+- package: github.com/davecgh/go-spew
+  version: v1.1.0
+- package: github.com/ghetzel/go-stockutil
+  version: ~1.5.16
+  subpackages:
+  - httputil
+  - log
+  - maputil
+  - pathutil
+  - sliceutil
+  - stringutil
+  - timeutil
+  - typeutil
+- package: github.com/ghodss/yaml
+- package: github.com/go-sql-driver/mysql
+- package: github.com/guregu/dynamo
+- package: github.com/hashicorp/golang-lru
+- package: github.com/husobee/vestigo
+- package: github.com/jbenet/go-base58
+- package: github.com/jdxcode/netrc
+- package: github.com/lib/pq
+- package: github.com/mattn/go-sqlite3
+- package: github.com/orcaman/concurrent-map
+- package: github.com/urfave/negroni
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - require

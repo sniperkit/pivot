@@ -11,10 +11,10 @@ import (
 
 	"github.com/ghetzel/go-stockutil/pathutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
 	"github.com/ghodss/yaml"
 	"github.com/hashicorp/golang-lru"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
 )
 
 var WriteLockFormat = `%s.lock`

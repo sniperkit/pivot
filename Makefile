@@ -5,6 +5,9 @@ LOCALS=`find . -type f -name '*.go' -not -path "./vendor/*"`
 
 all: deps fmt test build
 
+deps-glide:
+	@glide install --strip-vendor
+
 deps:
 	dep ensure
 
@@ -30,5 +33,5 @@ integration:
 build:
 	test -d pivot && go build --tags json1 -i -o bin/`basename ${PWD}` pivot/*.go
 
-quickbuild: deps fmt
+quickbuild: deps-glide fmt
 	test -d pivot && go build -i -o bin/`basename ${PWD}` pivot/*.go

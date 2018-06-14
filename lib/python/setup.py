@@ -8,7 +8,7 @@ setup(
     version='0.1.1',
     author='Gary Hetzel',
     author_email='garyhetzel+pivot@gmail.com',
-    url='https://github.com/ghetzel/pivot',
+    url='https://github.com/sniperkit/pivot',
     install_requires=[
         'requests',
         'six',

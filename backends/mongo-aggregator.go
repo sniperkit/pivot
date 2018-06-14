@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
 	"gopkg.in/mgo.v2/bson"
 )
 

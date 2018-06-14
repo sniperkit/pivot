@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ghetzel/pivot/dal"
-	"github.com/ghetzel/pivot/filter"
-	"github.com/ghetzel/pivot/filter/generators"
+	"github.com/sniperkit/pivot/dal"
+	"github.com/sniperkit/pivot/filter"
+	"github.com/sniperkit/pivot/filter/generators"
 )
 
 type esAggregationQuery struct {

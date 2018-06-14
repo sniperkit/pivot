@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/ghetzel/go-stockutil/maputil"
-	"github.com/ghetzel/pivot/filter"
+	"github.com/sniperkit/pivot/filter"
 	"github.com/stretchr/testify/require"
 )
 
@@ -249,42 +249,42 @@ func TestSqlUpdates(t *testing.T) {
 	assert := require.New(t)
 
 	tests := map[string]updateTestData{
-		`UPDATE foo SET id = ?`: updateTestData{
+		`UPDATE foo SET id = ?`: {
 			Input: map[string]interface{}{
 				`id`: 1,
 			},
 		},
-		`UPDATE foo SET name = ? WHERE (id = ?)`: updateTestData{
+		`UPDATE foo SET name = ? WHERE (id = ?)`: {
 			Input: map[string]interface{}{
 				`name`: `Bob Johnson`,
 			},
 			Filter: `id/1`,
 		},
-		`UPDATE foo SET age = ? WHERE (age < ?)`: updateTestData{
+		`UPDATE foo SET age = ? WHERE (age < ?)`: {
 			Input: map[string]interface{}{
 				`age`: 21,
 			},
 			Filter: `age/lt:21`,
 		},
-		`UPDATE foo SET enabled = ? WHERE (enabled IS NULL)`: updateTestData{
+		`UPDATE foo SET enabled = ? WHERE (enabled IS NULL)`: {
 			Input: map[string]interface{}{
 				`enabled`: true,
 			},
 			Filter: `enabled/null`,
 		},
-		`UPDATE foo SET enabled = ?`: updateTestData{
+		`UPDATE foo SET enabled = ?`: {
 			Input: map[string]interface{}{
 				`enabled`: nil,
 			},
 		},
-		`UPDATE foo SET age = ?, name = ? WHERE (id = ?)`: updateTestData{
+		`UPDATE foo SET age = ?, name = ? WHERE (id = ?)`: {
 			Input: map[string]interface{}{
 				`name`: `ted`,
 				`age`:  7,
 			},
 			Filter: `id/42`,
 		},
-		`UPDATE foo SET age = ?, name = ? WHERE (age < ?) AND (name <> ?)`: updateTestData{
+		`UPDATE foo SET age = ?, name = ? WHERE (age < ?) AND (name <> ?)`: {
 			Input: map[string]interface{}{
 				`name`: `ted`,
 				`age`:  7,

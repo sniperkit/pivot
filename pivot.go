@@ -8,9 +8,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/ghetzel/pivot/backends"
-	"github.com/ghetzel/pivot/dal"
 	"github.com/ghodss/yaml"
+	"github.com/sniperkit/pivot/backends"
+	"github.com/sniperkit/pivot/dal"
 )
 
 var MonitorCheckInterval = time.Duration(10) * time.Second
